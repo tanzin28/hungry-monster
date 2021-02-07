@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-weight: 300;
+  font-size: medium;
+  font-family: sans-serif;
+}
+.all-meal {
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 2em;
+  background: linear-gradient(360deg, #fff, #ffeeea);
+  text-align: center;
+}
+.btn {
+  font-size: medium;
+}
+
+.meal-search-box {
+  max-width: 90%;
+  margin: 100px auto;
+}
+.search-meal {
+  width: 400px;
+  height: 50px;
+  font-size: 1.2em;
+  border: 1px solid #ef6c4e;
+}
+.search-btn {
+  width: 100px;
+  height: 50px;
+  font-size: 1.2em;
+  background-color: #ef6c4e;
+}
+.meal-display {
+  margin-top: 3em;
+}
+#meal {
+  margin: 5em;
+}
+.meal-item {
+  border-radius: 1em;
+  overflow: hidden;
+  box-shadow: 0 1px 10px grey;
+}
+.meal-img img {
+  width: 100%;
+  display: block;
+}
+.meal-name {
+  padding: 1.5em 0.5em;
+}
+.noResult {
+  grid-template-columns: 1fr!important;
+  color: red;
+  font-size: 1.8em;
+  font-weight: 600;
+  width: 100%;
+}
+
+
+#meal-details{
+  width: 500px;
+  border: 1px solid black;
+}
+
+@media screen and (min-width: 600px) {
+  .meal-search-box {
+    width: 540px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #meal {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2em;
+  }
+  .meal-item {
+    margin: 0;
+  }
+}
+@media screen and (min-width: 992px) {
+  #meal {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
